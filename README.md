@@ -10,6 +10,14 @@
 
 - Device : LinkIt 7697, Dragino LoRa Shield, UpBoard
 
+# Architecture
+
++--------------+   +------+   +---------------+   +------------+                     
+| PM2.5 Sensor |---| LoRa |-->| LoRa (Server) |---| LinkIt7697 |--> MCS --> | UpBoard (NODE-RED) | --> e-mail, SMS, Android app
++--------------+   +------+   +---------------+   +------------+     |
+                                                                     --------------------------------> Website
+
+
 # Program
 
 - LoRa_PM_Sensor : Collect PM2.5 information and send to Server.
